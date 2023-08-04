@@ -1,7 +1,7 @@
-package tests;
+package tests.browserstack;
 
 import com.codeborne.selenide.Configuration;
-import drivers.BrowserstackDriver;
+import drivers.AndroidBrowserstackDriver;
 import helpers.Attach;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class TestBase {
     @BeforeAll
     static void beforeAll() {
-        Configuration.browser = BrowserstackDriver.class.getName();
+        Configuration.browser = AndroidBrowserstackDriver.class.getName();
         Configuration.browserSize = null;
         Configuration.timeout = 30000;
     }

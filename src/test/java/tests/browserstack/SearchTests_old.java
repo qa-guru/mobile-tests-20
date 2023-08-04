@@ -1,4 +1,4 @@
-package tests;
+package tests.browserstack;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.MobileBy;
